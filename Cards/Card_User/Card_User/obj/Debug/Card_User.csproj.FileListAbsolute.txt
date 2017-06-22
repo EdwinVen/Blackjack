@@ -1,0 +1,8 @@
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\bin\Debug\Card_User.exe.config
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\bin\Debug\Card_User.exe
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\bin\Debug\Card_User.pdb
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\bin\Debug\CardLibrary.dll
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\bin\Debug\CardLibrary.pdb
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\obj\Debug\Card_User.csprojResolveAssemblyReference.cache
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\obj\Debug\Card_User.exe
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\Card_User\Card_User\obj\Debug\Card_User.pdb

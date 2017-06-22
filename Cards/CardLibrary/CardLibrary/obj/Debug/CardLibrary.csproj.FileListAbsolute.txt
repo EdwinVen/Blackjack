@@ -1,0 +1,6 @@
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\bin\Debug\CardLibrary.dll
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\bin\Debug\CardLibrary.pdb
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\obj\Debug\CardLibrary.csprojResolveAssemblyReference.cache
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\obj\Debug\CardLibrary.dll
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\obj\Debug\CardLibrary.pdb
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\bin\Debug\CardPics.dll

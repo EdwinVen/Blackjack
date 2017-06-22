@@ -1,0 +1,77 @@
+﻿<Window x:Class="VisualBlackJack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualBlackJack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="638.002" Width="654.967" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu x:Name="menu" Margin="0,0,0,0" VerticalAlignment="Top" >
+            <MenuItem Header="File">
+                <MenuItem Header="New Game" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Exit" Click="MenuItem_Click_1"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About" Click="MenuItem_Click_2"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <TabControl x:Name="tabControl"  Margin="0,20,0,35" SelectionChanged="tabControl_SelectionChanged">
+            <TabItem Header="Game">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="label" Content="User Hand" HorizontalAlignment="Left" Margin="20,35,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold"/>
+                    <Label x:Name="label1" Content="Computer Hand" HorizontalAlignment="Left" Margin="20,282,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold"/>
+                    <Label x:Name="label2" Content="Score" HorizontalAlignment="Left" Margin="20,70,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label3" Content="Score" HorizontalAlignment="Left" Margin="20,317,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="player_score_txt" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="62,70,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="computer_score_txt" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="62,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+                    
+                    
+                    <ListView x:Name="player_hand_lv"   HorizontalAlignment="Left" Height="169" Margin="20,98,0,0" VerticalAlignment="Top" Width="600" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Height="150" Source="{Binding Pic}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                    <ListView x:Name="computer_hand_lv" HorizontalAlignment="Left" Height="169" Margin="20,345,0,0" VerticalAlignment="Top" Width="600">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Height="150" Source="{Binding Pic}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                    <Button x:Name="hit_btn" Content="Hit" HorizontalAlignment="Left" Margin="458,72,0,0" VerticalAlignment="Top" Width="75" ToolTip="Draws another card for the player" Click="hit_btn_Click"/>
+                    <Button x:Name="stay_btn" Content="Stay" HorizontalAlignment="Left" Margin="545,72,0,0" VerticalAlignment="Top" Width="75" ToolTip="Computer starts drawing its cards and game ends" Click="stay_btn_Click"/>
+                    <Label x:Name="label4" Content="Result" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold"/>
+                    <Label x:Name="label6" Content="User Cards Drawn" HorizontalAlignment="Left" Margin="219,70,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label7" Content="Computer Cards Drawn" HorizontalAlignment="Left" Margin="219,317,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="winner_txt" HorizontalAlignment="Left" Height="23" Margin="123,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True" FontWeight="Bold"/>
+                    <TextBox x:Name="player_cards_drawn_txt" HorizontalAlignment="Left" Height="23" Margin="348,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" IsReadOnly="True"/>
+                    <TextBox x:Name="computer_cards_drawn_txt" HorizontalAlignment="Left" Height="23" Margin="348,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" IsReadOnly="True"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="statistics_tab" Header="Statistics">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="blackJackDataGrid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" ItemsSource="{Binding}" AutoGenerateColumns="True" CanUserAddRows="False"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <StatusBar Height="30" Margin="0,523,0,0" VerticalAlignment="Bottom">
+            <Label x:Name="statBar_lbl"></Label>
+        </StatusBar>
+
+    </Grid>
+</Window>

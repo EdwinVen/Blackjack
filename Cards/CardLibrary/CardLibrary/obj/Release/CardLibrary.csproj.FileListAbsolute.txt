@@ -1,0 +1,4 @@
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\bin\Release\CardLibrary.dll
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\bin\Release\CardLibrary.pdb
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\obj\Release\CardLibrary.dll
+C:\dev\workspace\BCS450 Csharp\HW1_Cards\CardLibrary\CardLibrary\obj\Release\CardLibrary.pdb
